@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.15.4",
-      "toolsId": "92f845c6-3d0b-4c1c-8804-621c40b9be0b"
+      "toolsId": "cfe6bd2f-c903-4924-9ce3-26ad2cdfd366"
     },
     "dataSources": {
       "mainService": {
@@ -22,6 +22,19 @@
         "settings": {
           "annotations": [],
           "odataVersion": "4.0"
+        }
+      }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "techsupport-show": {
+          "semanticObject": "techsupport",
+          "action": "show",
+          "title": "{{flpTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
         }
       }
     }
