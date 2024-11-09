@@ -27,9 +27,16 @@
     "server": {
       "index": true
     },
+    "auth": {
+      "kind": "xsuaa",
+      "restrict_all_services": false
+    },
     "requires": {
       "[production]": {
-        "auth": "xsuaa",
+        "auth": {
+          "kind": "xsuaa",
+          "restrict_all_services": false
+        },
         "db": "hana"
       }
     },
