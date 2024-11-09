@@ -18,7 +18,9 @@
     "@sap/cds-dk": "^8"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-questions": "cds watch --open questions/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-answers": "cds watch --open answers/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "fiori": {
@@ -43,5 +45,9 @@
     "sql": {
       "native_hana_associations": false
     }
-  }
+  },
+  "sapux": [
+    "app/questions",
+    "app/answers"
+  ]
 }
